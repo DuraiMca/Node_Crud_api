@@ -1,5 +1,6 @@
 const app=require('./API/EmployeeAPI')
+const PORT=process.env.PORT || 3000;
 
-app.listen(3000,()=>{
-    console.log("Connected")
+app.listen(PORT,()=>{
+    console.log("Connected => " + PORT)
 })
