@@ -27,6 +27,13 @@ app.get("/", function(req, res){
 });
 
 
+app.get("/durai", function(req, res){
+    const obj = {
+        "Hello": "World"
+    }
+    return res.status(200).send(obj);
+});
+
 http.createServer(app).listen(app.get('port'), function(){
         console.log("server is running ...");
 });
